@@ -1,0 +1,51 @@
+#container{
+    border: 3px solid rgb(255, 0, 0);
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #505050;
+}
+body{
+    background: #d3d3d3;
+}
+#field{
+    /* fixed */
+    background-position: center;
+    border: 3px rgb(0, 0, 0) solid;
+    margin: 10px;
+    background-image: url('./img/Wood2.jpg');
+    border-radius: 5px;
+
+    /* variable */
+    height: 400px;
+    width: 700px;  
+}
+#control{
+    margin: 10px;
+}
+
+#ball{
+    /* fixed */
+    border: 1px solid rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 50%;
+    position: relative;
+
+    /* variable */
+    height: 80px;
+    width: 80px;
+
+    /* left: calc((300px - 50px - 2px) / 2); */
+    /* top: calc((200px - 50px - 2px) / 2); */
+}
+.ballimage{
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+}
+span{
+    border: 1px solid #ff0000;
+}

@@ -24,6 +24,7 @@ let running = false
 const runClick = () => {
     running = !running
     //บังคับให้ render
+    removeActiveClass()
     render()
 }
 const calculate = () => {
@@ -94,31 +95,47 @@ document.addEventListener('DOMContentLoaded', function() {
     //initialize
     initial()
 })
+
+const removeActiveClass = () => {
+    const buttons = document.querySelectorAll('.btn')
+    buttons.forEach(button => button.classList.remove('active'))
+}
+const buttonClick = (id) => {
+    removeActiveClass()
+    document.getElementById(id).classList.add('active')
+}
 const noneClick = () => {
+    buttonClick('none')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/white.jpg" alt="">'
 }
 const basketballClick = () => {
+    buttonClick('basketball')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/basketball.png" alt="">'
 }
 const footballClick = () => {
+    buttonClick('football')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/football.png" alt="">'
 }
 const voleyballClick = () => {
+    buttonClick('voleyball')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/voleyball.png" alt="">'
 }
 const humanClick = () => {
+    buttonClick('human')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/human.png" alt="">'
 }
 const cartoonClick = () => {
+    buttonClick('cartoon')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/cartoon.png" alt="">'
 }
 const logoClick = () => {
+    buttonClick('logo')
     let ball = document.getElementById('ball')
     ball.innerHTML = '<img class="ballimage" src="./img/Logo.png" alt="">'
 }

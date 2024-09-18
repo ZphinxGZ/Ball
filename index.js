@@ -7,7 +7,7 @@ const maxLeft = fieldWidth - diameter - 6
 const maxTop = fieldHeight - diameter - 6
 const vx = 5 //1 Farme เคลื่อนที่ได้ไว 5 px ต่อ frame ในแหน x
 const vy = 5 //1 Farme เคลื่อนที่ได้ไว 5 px ต่อ frame ในแหน y
-// rotaion
+
 const rotationSpeed = 3 //speed of rotation
 
 //global variables
@@ -15,6 +15,7 @@ let goRight = true
 let goDown = true
 let x = 0
 let y = 0
+
 // rotaion
 let rotation = 0
 
